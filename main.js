@@ -1,3 +1,4 @@
+// LES PIONNIERES
 const inputs = document.querySelectorAll ('input');
 
 inputs.forEach(input => {
@@ -15,22 +16,7 @@ inputs.forEach(input => {
 
 
 
-
-
-
-
-
-// const cercle = document.querySelector('.cercleContainer');
-// const callBackFunction = function(entries){
-//   console.log(entries[0]);
-// };
-
-// const observer = new IntersectionObserver(callBackFunction, {
-//   threshold: [0.4]
-// });
-
-
-
+// INTERSECTION OBSERVER
 
 const elements = document.querySelectorAll('.anim');
 const observer = new IntersectionObserver ((entries) => {
@@ -46,3 +32,5 @@ const observer = new IntersectionObserver ((entries) => {
     elements.forEach(element =>{
         observer.observe(element)
     });
+
+

@@ -6,7 +6,7 @@
 
 
 
-  span{
+span{
     opacity: 0;
     transition: all 0.4s ease-in-out;
     /* transform: translateY(50px);
@@ -22,11 +22,11 @@ span.fade{
 
 
 /* INTERSECTIONOBSERVER */
-
-
 .anim {
     opacity: 0;
-    transition: 1.5s ease;
+    /* transition: 1s; */
+    transition: 1.5s ease-in-out;
+    /* animation:  .2s ease-in; */
 }
 
 .left{
@@ -41,9 +41,6 @@ span.fade{
     transform: translateX(0);
     opacity: 1;
 }
-
-
-
 
 
 
