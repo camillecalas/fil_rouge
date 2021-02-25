@@ -13,3 +13,24 @@ inputs.forEach(input => {
 
 
 
+
+
+
+
+
+
+
+// const cercle = document.querySelector('.cercleContainer');
+// const callBackFunction = function(entries){
+//   console.log(entries[0]);
+// };
+
+// const observer = new IntersectionObserver(callBackFunction, {
+//   threshold: [0.4]
+// });
+
+
+
+new fullpage('#fullpage', {
+    autoScrolling: true,
+})

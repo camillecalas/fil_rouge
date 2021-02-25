@@ -34,13 +34,27 @@ function onTick(){
     const span = text.querySelectorAll('span')[char];
     span.classList.add('fade');
     char++;
-    // if(char === splitText.length){
-    //     complete();
-    //     return;
-    // }
+    if(char === splitText.length){
+        complete();
+        return;
+    }
 }
 
-// function complete(){
-//     clearInterval(timer);
-//     timer = null;
-// }
+function complete(){
+    clearInterval(timer);
+    timer = null;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

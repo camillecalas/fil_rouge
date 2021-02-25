@@ -24,6 +24,21 @@ span.fade{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 .text, .image{
     transform: translateX(0);
@@ -91,7 +106,7 @@ h1{
     font-size: clamp(35px, 8vw, 120px);
     line-height: clamp(40px, 8vw, 120px);
     margin-bottom: 5%;
-    color:#ECB942; 
+    color:#EE7A7F; 
 }
 
 h2{
@@ -141,7 +156,6 @@ label {
 /*********************************************************/
 /****************** SECTION 1 - ACCUEIL *******************/
 .section1{
-    /* min-height: 721px; */
     min-height: 600px;
 }
 
@@ -163,13 +177,10 @@ header{
     font-size: clamp(18px, 10vw, 25px);
     line-height: clamp(20px, 10vw,40px);
     color: #FFFFFF;
-    /* width: min(500px, 100%); */
 }
 
 .containerAccueil {
-   
     position: relative;
-    border: 4px solid red;
     align-items: center;
     justify-content: space-between;
 }
@@ -177,7 +188,6 @@ header{
 .containerResponsive{
     padding: 2%;
     width: min(800px, 100%);
-    border: 4px solid yellow;
     justify-content: flex-start;
     align-items:  flex-start;
 }
@@ -205,7 +215,6 @@ header{
     background-color:#ECB942; 
 }
     
-
 .introSect2{
     flex-wrap: wrap;
     justify-content: space-around;
@@ -218,15 +227,11 @@ header{
     bottom: 0;
 }
 
-
-
 .section2{
     position: relative;
-    border: 4px solid sandybrown;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .paraStyle{
     width: min(800px, 95%);
@@ -244,7 +249,6 @@ header{
     align-items: center;
     text-align: center;
 }
-
 
 .textCercle{
     font-weight: bold;
@@ -264,7 +268,6 @@ header{
     justify-content: space-between;
     height: auto;
     padding-left: 5%;
-    border: 4px solid yellow;
     margin-top: 120px;
     flex-wrap: wrap;
 }
@@ -275,16 +278,16 @@ header{
 }
 
 .containerIcones{
+    justify-content:space-around;
     flex-wrap: wrap;
     background-color: #EE7A7F;
     width: min(953px, 100%);
-    gap: 100px
+    /* gap: 100px */
 }
 
  .icone{
-     border: 4px solid red;
-    /* gap: 45px; */
     position: relative;
+    gap: 45px;
     bottom:  5vw;
 } 
 
@@ -325,7 +328,6 @@ header{
     flex-wrap: wrap-reverse;
 }
 
-
 .phoneResponsive{
     display: none;
 }
@@ -346,7 +348,6 @@ header{
 /* PARTIE 1 */
 .force{
     position: relative;
-    border: 4px solid red;
     width: 75%;
     justify-content: flex-end;
     align-items: flex-end;
@@ -361,9 +362,9 @@ header{
 }
 
 .titreHorizontal{
-position: absolute;
-top: 10px;
-right: 80px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
 }
 
 .titreVertical{
@@ -371,11 +372,9 @@ right: 80px;
     text-orientation: mixed;    
     position: absolute;
     top: 25px;
-    /* right: 50px; */
 }
 
 .canape{
-
     position: absolute;
 }
 
@@ -386,12 +385,10 @@ right: 80px;
 
  /* PARTIE 2 */
 .section5 .hashtagGeant{
-    border: 4px solid blue;
     justify-content: flex-end !important;
     align-items: flex-end  !important;
     position: relative;
 }
-
 
 .provoquer{
     padding:  12%;
@@ -402,8 +399,7 @@ right: 80px;
 }
 
 .scandaliser{
-    padding:  10%;
-    border: 4px solid purple;
+    padding:  10%;      
     width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -416,10 +412,9 @@ right: 80px;
 
 
 .hashtag{
-position: absolute;
-left: -450px;
-top: -10%;
-/* transform: translateX(-350px); */
+    position: absolute;
+    left: -450px;
+    top: -10%;
 }
 
 
@@ -437,7 +432,6 @@ top: -10%;
 .faq-container{
     margin-right: 100px;
     width: 40%;
-    border: 4px solid greenyellow;
     padding: 5%;
 }
 
@@ -456,7 +450,6 @@ top: -10%;
 label{
     display: block;
     cursor: pointer;
-    /* width: 100%; */
     text-align: left;
     transition: 0.4s;
 }
@@ -505,7 +498,6 @@ padding-bottom: 5px;
     font-size: 35px;
     letter-spacing: 0.05em;
     color: white;
-
 }
 
 .marquee-rtl {
@@ -532,7 +524,12 @@ padding-bottom: 5px;
     }
   }
 
-
+  .hashtagDefile:after {
+    content:attr(data-text);
+    position:absolute;
+    white-space:nowrap;
+    padding-left:10px;
+}
 
 
 
@@ -549,31 +546,32 @@ padding-bottom: 5px;
     /****************** SECTION 3 - INOTRE MISSION*******************/
 
     .section3{
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0px;
     }
 
-.titreDeskstopMission{
-    display: none;
-}
-.titreResponsiveMission{
-    display: block;
-    text-align: center;
-}
+    .titreDeskstopMission{
+        display: none;
+  }
+
+    .titreResponsiveMission{
+        display: block;
+        text-align: center;
+    }
 
     .containerIcones{
      width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 100px
+     padding-top: 20px;
+     padding-bottom: 20px;
+     gap: 100px
     }
 
- .icone{
+    .icone{
     bottom:  0vw;
     } 
-    }
+}
 
 /*************************** 1265PX****************************/
 /**************************************************************/
@@ -582,8 +580,6 @@ padding-bottom: 5px;
 
     h2{
         font-size: 45px;
-        letter-spacing: 0.05em;
-        color: #010526;
     }
 
     /**************************************************************/
@@ -598,6 +594,7 @@ padding-bottom: 5px;
     .paraStyle{
         padding: 5%;
     }
+
     .introSect2{
         gap: 50px;
     }
@@ -616,54 +613,44 @@ padding-bottom: 5px;
 
 @media (max-width: 1220px){
 
-/*****************************************************/
-/****************** SECTION 6 - FAQ *******************/
+    /*****************************************************/
+    /****************** SECTION 6 - FAQ *******************/
 
-.section6{
-    flex-direction: column;
-    justify-content: center;
-    flex-direction: center;
-    background: #EE7A7F;
-    flex-wrap: wrap;
+    .section6{
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: center;
+    }
 
-}
+    .faq-container{
+        margin-right: 0px;
+        width: 100%;
+    }
 
-
-.faq-container{
-    margin-right: 0px;
-    width: 100%;
-    border: 4px solid greenyellow;
-    padding: 5%;
-}
-
-.section6 h2{
-    text-align: center;
-}
+    .section6 h2{
+        text-align: center;
+    }
 
 }
-
-
 
 
 /*************************** 1108PX****************************/
 /**************************************************************/
 
 @media (max-width: 1108px){
-/*********************************************************/
-/****************** SECTION 1 - ACCUEIL *******************/
-.section1{
-    /* min-height: 721px; */
-    min-height: 600px;
-}
-.hashtagResponsive{
+    /*********************************************************/
+    /****************** SECTION 1 - ACCUEIL *******************/
+    .hashtagResponsive{
     display: block;
-}
+    }
 
-.hashtagDeskstop{
+    .hashtagDeskstop{
     display: none;
-}
+    }
 
 }
+
+
 /*************************** 1053PX****************************/
 /**************************************************************/
 @media (max-width: 1053px){
@@ -698,37 +685,37 @@ padding-bottom: 5px;
         width: 100%;
     }
 
-.donnerForce{
-    padding:  10%;
-    margin-right: 0px;
-    margin-top: 20px;
-    margin-bottom:  240px;
-}
+    .donnerForce{
+        padding:  10%;
+        margin-right: 0px;
+        margin-top: 20px;
+        margin-bottom:  240px;
+    }
 
-.titreResponsive{
-    color: white;
-    text-align: center;
-    display: block;
-    align-self: center;
-}
+    .titreResponsive{
+        color: white;
+        text-align: center;
+        display: block;
+        align-self: center;
+    }
 
-.titreHorizontal{
-    display: none;
-}
+    .titreHorizontal{
+        display: none;
+    }
 
-.titreVertical{
- display: none;
-}
+    .titreVertical{
+        display: none;
+    }
 
-/* PARTIE 2 */
-.provoquer{
+    /* PARTIE 2 */
+    .provoquer{
     padding:  12%;
     width: 100%;
-}
+    }
 
-.scandaliser{
+    .scandaliser{
     width: 65%;
-}
+    }
 
 }
 
@@ -738,54 +725,52 @@ padding-bottom: 5px;
 /**************************************************************/
 
 @media (max-width: 905px){
-p{
-    font-size: 19px;
-}
-/**************************************************************/
-/****************** SECTION 2 - INTRODUCTION*******************/
-.cercleContainer{
-    width: 400px;
-    height: 400px;
-}
+    p{
+        font-size: 19px;
+    }
+    /**************************************************************/
+    /****************** SECTION 2 - INTRODUCTION*******************/
+    .cercleContainer{
+        width: 400px;
+        height: 400px;
+    }
     
 
-/**************************************************************/
-/****************** SECTION 5 - NOTRE MISSION*******************/
+    /**************************************************************/
+    /****************** SECTION 5 - NOTRE MISSION*******************/
 
-.scandaliser{
+    .scandaliser{
     width: 70%;
-}
+    }
 
-
-.hashtag{
-    width: 50%;
-    left: -50px;
-    top: 50px;
+    .hashtag{
+        width: 50%;
+        left: -50px;
+        top: 50px;
     }
 }
 
+
 @media(max-width: 856px){
-/*********************************************************/
-/****************** SECTION 1 - ACCUEIL *******************/
-.section1{
-    /* min-height: 721px; */
-    min-height: 600px;
-}
+    /*********************************************************/
+    /****************** SECTION 1 - ACCUEIL *******************/
+    .section1{
+        min-height: 600px;
+    }
 
-.logo{
-    justify-content: flex-start;
-    align-items: center;
-}
+    .logo{
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-header{
+    header{
     margin-top: 30px;
     margin-left: 20px;
     gap: 20px;
     margin-bottom: 30px;
-}
+    }
 
-
-.introAccueil{
+    .introAccueil{
     font-weight: 600;
     font-size: clamp(18px, 10vw, 25px);
     line-height: clamp(20px, 10vw,40px);
@@ -793,51 +778,38 @@ header{
     position: static;
     z-index: 1;
     /* width: min(500px, 100%); */
-}
+    }
 
-.containerAccueil {
+    .containerAccueil {
    flex-direction: column;
     position: relative;
-    border: 4px solid red;
     align-items: center;
     justify-content: space-between;
     position: relative;
-}
+    }
 
-.containerResponsive{
+    .containerResponsive{
     padding: 2%;
     width: min(500px, 100%);
-    border: 4px solid yellow;
     justify-content:flex-end;
     align-self: flex-end;
+    }
+
+    h1{
+        z-index: 1;
+    }
+
+    .hashtagResponsive{
+        display: none;
+    }
+
+    .hashtagPhone{
+        display: block;
+        position: absolute;
+        left: -100px;
+        transform: rotate(10deg);
+        }  
 }
-
-h1{
-    /* text-align: center; */
-    z-index: 1;
-}
-
-.hashtagResponsive{
-display: none;
-}
-
-.hashtagPhone{
-    display: block;
-    position: absolute;
-    left: -100px;
-    transform: rotate(10deg);
-
-}
-
-
-
-}
-
-
-
-
-
-
 
 
 /*************************** 754PX****************************/
@@ -877,21 +849,6 @@ display: none;
 
     /**************************************************************/
     /****************** SECTION 5 - NOTRE MISSION*******************/
-
-    /* PARTIE 1 */
-
-    /* .canapeResponsive{
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-
-    /* .canape{
-        display: none;
-    } */
-
-
     /* PARTIE 2 */
     .scandaliser{
         width: 100%;
@@ -940,7 +897,6 @@ header{
    flex-direction: column;
     position: relative;
     height: 500px;
-    border: 4px solid red;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -949,7 +905,6 @@ header{
 .containerResponsive{
     padding: 2%;
     width: min(400px, 100%);
-    border: 4px solid yellow;
     justify-content:center;
     align-items: center;
     align-self: center;
@@ -983,10 +938,16 @@ display: none;
 
 
 
+/*********************************************************/
+/****************** SECTION 7 - FOOTER *******************/
+.hashtagDefile{
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: white;
 }
 
-
-
+}
 
 
 
@@ -1005,8 +966,14 @@ display: none;
         font-weight: 600;
         font-size: 25px;
         line-height: 25px;
-  
     }
+
+    .introAccueil{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
     /**************************************************************/
     /****************** SECTION 5 - NOTRE MISSION*******************/
     .donnerForce{
@@ -1046,19 +1013,17 @@ display: none;
     
     .introAccueil{
         font-weight: 600;
-        font-size: clamp(18px, 10vw, 25px);
-        line-height: clamp(20px, 10vw,40px);
+        font-size: 20px;
+        line-height: 30px;
         color: #FFFFFF;
         position: static;
         z-index: 1;
-        /* width: min(500px, 100%); */
     }
     
     .containerAccueil {
        flex-direction: column;
         position: relative;
         height: 500px;
-        border: 4px solid red;
         align-items: center;
         justify-content: space-between;
         position: relative;
@@ -1067,11 +1032,9 @@ display: none;
     .containerResponsive{
         padding: 2%;
         width: min(400px, 100%);
-        border: 4px solid yellow;
         justify-content:center;
         align-items: center;
         align-self: center;
-      
     }
     
     h1{
@@ -1097,16 +1060,6 @@ display: none;
         top: -50px;
         transform: rotate(deg);
     }
-    
-    
-    
-    
-    
-    
-
-
-
-
 
     /**************************************************************/
     /****************** SECTION 2 - INTRODUCTION*******************/
