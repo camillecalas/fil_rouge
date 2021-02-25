@@ -251,7 +251,7 @@ header{
 
 .textCercle{
     font-weight: bold;
-    font-size: clamp(19px, 12vw, 25px);
+    font-size:25px;
     line-height: 31px;
     color: #010526;
 } 
