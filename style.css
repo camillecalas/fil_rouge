@@ -5,6 +5,26 @@
 }
 
 
+
+  span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    /* transform: translateY(50px);
+    display: inline-block; */
+}
+
+span.fade{
+    opacity: 1;
+    color: white;
+    /* transform: translateY(0px); */
+}  
+
+
+
+
+
+
+/* 
 .text, .image{
     transform: translateX(0);
     opacity: 1;
@@ -14,9 +34,11 @@
 .text.not-visible, .image.not-visible{
     transform: translateX(50px);
     opacity: 0;
+} */
+
+html{
+    scroll-behavior: smooth;
 }
-
-
 
 body{
     background-color: #010526;
@@ -69,6 +91,7 @@ h1{
     font-size: clamp(35px, 8vw, 120px);
     line-height: clamp(40px, 8vw, 120px);
     margin-bottom: 5%;
+    color:#ECB942; 
 }
 
 h2{
@@ -210,7 +233,8 @@ header{
     font-size: 19px;
 }
 
-.paraStyle span{
+.paraStyle .span3{
+    opacity: 1;
     font-weight: bold;
 }
 
@@ -423,7 +447,8 @@ top: -10%;
 } 
 
 
-.faq-container span {
+.faq-container .span2 {
+    opacity: 1;
     float: right;
     transition: 0.4s;
 }
@@ -461,7 +486,8 @@ input:checked ~ label{
     font-weight: 700;
 }
 
-input:checked ~label span {
+input:checked ~label .span2 {
+    opacity: 1;
     transform: rotate(180deg);
     transition: 0.4s;
 }
