@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 4px solid red; */
 }
 
 
-
+/* INTRO TITRE */
 span{
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -54,8 +55,8 @@ body{
     overflow-x: hidden;
 }
 section{
-padding-bottom: 150px;
-    
+    overflow-x: hidden;
+    padding-bottom: 150px;
 }
 
 /****************** DISPLAY******************/
