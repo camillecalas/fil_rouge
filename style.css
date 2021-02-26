@@ -987,13 +987,15 @@ display: none;
 /*************************** 580PX****************************/
 /**************************************************************/
 @media (max-width: 580px){
+    .section1{
+        padding-bottom: 50px;
+    }
 
     .logo{
         justify-content: center;
         align-items: center;
     }
     
-
     .introAccueil{
         font-weight: 600;
         font-size: 25px;
