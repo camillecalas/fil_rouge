@@ -279,12 +279,10 @@ header{
     flex-wrap: wrap;
     background-color: #EE7A7F;
     width: min(953px, 100%);
-    /* gap: 100px */
 }
 
- .icone{
+.icone{
     position: relative;
-    /* gap: 45px; */
     bottom:  5vw;
 } 
 
@@ -403,11 +401,12 @@ header{
     align-items: flex-start;
 }
 
+
+
 .provoquerContainer{
     justify-content: flex-end;
     align-items: flex-end;
 }
-
 
 .hashtag{
     position: absolute;
@@ -423,7 +422,6 @@ header{
     justify-content: space-between;
     background: #EE7A7F;
     flex-wrap: wrap;
-
 }
 
 
@@ -1121,12 +1119,6 @@ display: none;
     .phoneDeskstop{
         display: none;
     }
-
-    /**************************************************************/
-    /****************** SECTION 3 - NOTRE MISSION*******************/
-    /* .textIcone{
-        padding-top: 50px;
-    } */
 
 
 }
