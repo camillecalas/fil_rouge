@@ -334,7 +334,7 @@ header{
 
 
 /**************************************************************/
-/****************** SECTION 5 - NOTRE MISSION*******************/
+/****************** SECTION 5 - NOTRE MODE D'ACTION*******************/
 
 .section5{
     background: #EE7A7F;
@@ -548,14 +548,10 @@ padding-bottom: 5px;
         justify-content: space-between;
         height: auto;
         padding-left: 5%;
-        margin-top: 120px;
+        margin-top: 30px;
         padding-top: 5%;  /* PROBLEME TAILLE */
         flex-wrap: wrap;
     }
-
-
-
-
 
     .section3{
         flex-direction: column;
@@ -571,6 +567,7 @@ padding-bottom: 5px;
     .titreResponsiveMission{
         display: block;
         text-align: center;
+        padding-bottom: 55px;
     }
 
     .containerIcones{
@@ -635,12 +632,14 @@ padding-bottom: 5px;
     }
 
     .faq-container{
+    padding-top: 90px;
         margin-right: 0px;
         width: 100%;
     }
 
     .section6 h2{
         text-align: center;
+        padding-bottom: 55px;
     }
 
 }
@@ -692,7 +691,11 @@ padding-bottom: 5px;
 
     /**************************************************************/
     /****************** SECTION 5 - NOTRE MISSION*******************/
-    /* PARTIE 1 */
+
+    .section5{
+        margin-top: 30px;
+    }
+
     .force{
         width: 100%;
     }
@@ -709,6 +712,7 @@ padding-bottom: 5px;
         text-align: center;
         display: block;
         align-self: center;
+        padding-bottom: 55px;
     }
 
     .titreHorizontal{
@@ -871,8 +875,17 @@ padding-bottom: 5px;
     }
 }
 
+/*************************** 632PX****************************/
+/**************************************************************/
+
+@media (max-width: 632px){
+.section5{
+    padding-bottom: 0px;
+}
 
 
+
+}
 
 
 /*************************** 613PX****************************/
@@ -1078,37 +1091,44 @@ display: none;
     /**************************************************************/
     /****************** SECTION 2 - INTRODUCTION*******************/
     .cercleContainer{
-    width: 100%;
-    height: auto;
-    padding: 10%;
-    border-radius: 0%;
+        width: 100%;
+        height: auto;
+        padding: 10%;
+        border-radius: 0%;
     }
 
 
 
-.anim {
-  display: block;
-}
+    .anim {
+        display: block;
+    }
 
-.left{
+    .left{
     transform: translateX(0%);
-}
+    }
 
-.right{
-    transform: translateX(0%);
-}
+    .right{
+        transform: translateX(0%);
+    }
 
-.anim-reveal{
-    transform: translateX(0);
-    opacity: 1;
-}
+    .anim-reveal{
+        transform: translateX(0);
+        opacity: 1;
+    }
 
-.titreDeskstopMission{
-    display: none;
-}
+    .titreDeskstopMission{
+        display: none;
+    }
 
-.phoneDeskstop{
-    display: none;
-}
+    .phoneDeskstop{
+        display: none;
+    }
+
+    /**************************************************************/
+    /****************** SECTION 3 - NOTRE MISSION*******************/
+    .textIcone{
+        padding-top: 50px;
+    }
+
 
 }
