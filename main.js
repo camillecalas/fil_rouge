@@ -14,10 +14,7 @@ inputs.forEach(input => {
 
 
 
-
-
 // INTERSECTION OBSERVER
-
 const elements = document.querySelectorAll('.anim');
 const observer = new IntersectionObserver ((entries) => {
     entries.forEach((entry)=>{
