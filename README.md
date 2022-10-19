@@ -1,4 +1,4 @@
-# Final Hackeuse School Project (4 weeks course)
+# Final Simplon School Project (4 weeks course)
 
 ## Brief :
 - Create a one page website on a feminism subject. 
